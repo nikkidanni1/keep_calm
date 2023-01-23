@@ -73,7 +73,7 @@ const SliderSection = ({ images }) => {
     }
 
     const handlerTouchMove = (e) => {
-        let translateX = startPositionTranslateXSlider + mouseDownXPosition - e.targetTouches[0].pageX
+        let translateX = startPositionTranslateXSlider + 1.5 * (mouseDownXPosition - e.targetTouches[0].pageX)
 
         if (translateX < 0) {
             translateX = 0
@@ -100,7 +100,7 @@ const SliderSection = ({ images }) => {
             document.removeEventListener('scroll', handlerScroll)
         }
     }, [sliderSectionRef])
-    console.log(isBrowser, isMobile)
+
     useEffect(() => {
         if (sliderSectionRef.current && window.innerWidth < 1024) {
             if (isMobile) {
