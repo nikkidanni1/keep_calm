@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Manrope');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@font-face {
+    font-family: 'Orchidea Pro'; 
+    src: url('./assets/fonts/OrchideaPro/OrchideaPro-Medium.eot'),
+        url('./assets/fonts/OrchideaPro/OrchideaPro-Medium.woff') format('woff'),
+        url('./assets/fonts/OrchideaPro/OrchideaPro-Medium.woff2')  format('woff2'),
+        url('./assets/fonts/OrchideaPro/OrchideaPro-Medium.ttf')  format('truetype'); 
+    font-style: normal; 
+    font-weight: 500;
+}

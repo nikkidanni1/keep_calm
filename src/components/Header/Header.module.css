@@ -1,0 +1,69 @@
+.header {
+    z-index: 2;
+    position: sticky;
+    top: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 100px;
+    padding-bottom: 30px;
+    background: linear-gradient(0deg, #464341 0%, #010101 100%);
+}
+
+@media screen and (max-width: 1023px) {
+    .header {
+        align-items: center;
+        height: 60px;
+        padding-bottom: 0;
+    }
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: var(--width-section);
+    min-width: var(--min-width-section);
+}
+
+@media screen and (max-width: 1023px) {
+    .header__content {
+        align-items: center;
+    }
+}
+
+.header__logo {
+    height: 36px;
+}
+
+@media screen and (max-width: 1023px) {
+    .header__logo {
+        height: 20px;
+    }
+}
+
+.header__tel {
+    font-family: var(--font-family-text);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.125;
+    color: var(--secondary-text);
+    text-decoration: none;
+}
+
+.header__telIcon {
+    display: none;
+    width: 24px;
+}
+
+@media screen and (max-width: 1023px) {
+    .header__tel {
+        display: none;
+    }
+
+    .header__telIcon {
+        display: block;
+    }
+}

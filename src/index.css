@@ -1,13 +1,178 @@
-body {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+:root {
+  --font-family-text: Manrope, sans-serif;
+  --font-family-title: Orchidea Pro, sans-serif;
+  --font-size-section-title: 48px;
+  --font-size-section-text: 18px;
+  --primary-text: #141414;
+  --secondary-text: #ffffff;
+  --width-section: 73vw;
+  --min-width-section: 1400px;
+
+  --current-section-width: max(var(--width-section), var(--min-width-section));
+  --current-section-margin: calc((100vw - var(--current-section-width)) / 2)
+}
+
+@media screen and (max-width: 1439px) {
+  :root {
+    --width-section: 90vw;
+    --min-width-section: 90vw;
+  }
+}
+
+.section {
+  box-sizing: border-box;
+  width: var(--width-section);
+  min-width: var(--min-width-section);
+  margin: 15vh auto 0;
+}
+
+@media screen and (max-width: 1023px) {
+  .section {
+    margin: 10vh auto 0;
+  }
+}
+
+.title {
+  width: 100%;
+  margin-bottom: 12vh;
+  font-family: var(--font-family-title);
+  font-weight: 500;
+  font-size: var(--font-size-section-title);
+  text-transform: uppercase;
 }

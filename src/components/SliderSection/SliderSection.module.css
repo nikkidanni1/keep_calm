@@ -1,0 +1,31 @@
+.root {
+    position: relative;
+    margin-top: 0;
+}
+
+.root__content {
+    position: sticky;
+    top: 0;
+    padding-top: 15vh;
+}
+
+.slider {
+    display: flex;
+    width: max-content;
+    margin-left: var(--current-section-margin);
+}
+
+.slider__wrapper {
+    width: 100vw;
+    margin-left: calc(-1 * var(--current-section-margin));
+    overflow: hidden;
+}
+
+.slider__slide {
+    margin-right: 2vw;
+    aspect-ratio: 0.65;
+}
+
+.slider__slide:last-child {
+    margin-right: 0;
+}
