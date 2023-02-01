@@ -7,6 +7,7 @@
     grid-template-columns: repeat(2, 1fr);
     grid-auto-flow: dense;
     align-items: center;
+    column-gap: 6vw;
     row-gap: 12vh;
     width: calc(var(--width-section) - 75px);
     min-width: calc(var(--min-width-section) - 75px);
@@ -70,10 +71,6 @@
     .gridTextContainer {
         width: 100%;
     }
-}
-
-.gridTextContainer:nth-child(4n - 2) {
-    justify-self: end;
 }
 
 .gridTextContainer__title {
